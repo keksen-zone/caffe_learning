@@ -10,7 +10,7 @@ def detect(filename, cascade_file = "lbpcascade_animeface.xml"):
         raise RuntimeError("%s: not found" % cascade_file)
 
     cascade = cv2.CascadeClassifier(cascade_file)
-    image = cv2.imread("/Users/shenxudong/Desktop/tmp/pics/"+filename, cv2.IMREAD_COLOR)
+    image = cv2.imread("/Users/sakurakouji/Desktop/tmp/pics/"+filename, cv2.IMREAD_COLOR)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     gray = cv2.equalizeHist(gray)
     
@@ -27,12 +27,12 @@ def detect(filename, cascade_file = "lbpcascade_animeface.xml"):
     try:
         cv2.imwrite("faces/"+filename, cropimg)
     except UnboundLocalError:
-        shutil.copyfile("/Users/shenxudong/Desktop/tmp/pics/"+filename,"/Users/shenxudong/Desktop/tmp/not_detected/"+filename)
+        shutil.copyfile("/Users/sakurakouji/Desktop/tmp/pics/"+filename,"/Users/sakurakouji/Desktop/tmp/not_detected/"+filename)
     
 #    cv2.imshow("AnimeFaceDetect", cropimg)
 #    cv2.waitKey(0)
    
-path='/Users/shenxudong/Desktop/tmp/pics';
+path='/Users/sakurakouji/Desktop/tmp/pics';
 filelist=os.listdir(path)
 #print filelist
 for files in filelist:
