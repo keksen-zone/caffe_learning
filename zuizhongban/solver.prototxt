@@ -1,4 +1,4 @@
-net: "/Users/shenxudong/Desktop/tmp/train_val.prototxt"
+net: "/Users/sakurakouji/Desktop/tmp/train_val.prototxt"
 test_iter: 30
 test_interval: 100
 base_lr: 0.01
@@ -10,5 +10,5 @@ max_iter: 500
 momentum: 0.9
 weight_decay: 0.005
 snapshot: 400
-snapshot_prefix: "/Users/shenxudong/Desktop/tmp"
+snapshot_prefix: "/Users/sakurakouji/Desktop/tmp"
 solver_mode: CPU
