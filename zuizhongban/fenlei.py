@@ -4,8 +4,8 @@ import os
 import sys
 import shutil
 
-root='/Users/shenxudong/Desktop/tmp/'
-caffe_root='/Users/shenxudong/Desktop/workspace/caffe/'
+root='/Users/sakurakouji/Desktop/tmp/'
+caffe_root='/Users/sakurakouji/Desktop/workspace/caffe/'
 sys.path.insert(0,caffe_root+'python')
 import caffe
 os.chdir(root)
@@ -48,7 +48,7 @@ def Test(dir,img):
     print prob 
     order=prob.argsort()[-1]  
     print 'the class is:',labels[order]   
-#    f=file("/Users/shenxudong/Desktop/workspace/caffe/examples/lovelive/gailv.txt","a+")
+#    f=file("/Users/sakurakouji/Desktop/workspace/caffe/examples/lovelive/gailv.txt","a+")
 #    f.writelines(img+' '+labels[order]+'\n')
 
     #shutil.move(img,root+'classify/'+labels[order]+'/')
