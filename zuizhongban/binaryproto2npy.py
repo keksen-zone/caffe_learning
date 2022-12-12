@@ -4,13 +4,13 @@ import sys
 import os
 
 
-caffe_root='/Users/shenxudong/Desktop/workspace/caffe/'
+caffe_root='/Users/sakurakouji/Desktop/workspace/caffe/'
 sys.path.insert(0,caffe_root+'python')
 import caffe
 os.chdir(caffe_root)
 
-MEAN_PROTO_PATH = '/Users/shenxudong/Desktop/tmp/mean.binaryproto'
-MEAN_NPY_PATH = '/Users/shenxudong/Desktop/tmp/mean.npy'
+MEAN_PROTO_PATH = '/Users/sakurakouji/Desktop/tmp/mean.binaryproto'
+MEAN_NPY_PATH = '/Users/sakurakouji/Desktop/tmp/mean.npy'
 
 blob = caffe.proto.caffe_pb2.BlobProto()       
 data = open(MEAN_PROTO_PATH, 'rb' ).read()      
