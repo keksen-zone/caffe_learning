@@ -1,7 +1,7 @@
 import os
 
 def rename():
-    path='/Users/shenxudong/Desktop/tmp/pics';
+    path='/Users/sakurakouji/Desktop/tmp/pics';
     filelist=os.listdir(path)
 #    print filelist
     count=0;
