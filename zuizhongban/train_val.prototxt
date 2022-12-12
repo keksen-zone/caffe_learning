@@ -10,10 +10,10 @@ layer {
   transform_param {
     mirror: true
     crop_size: 227
-    mean_file: "/Users/shenxudong/Desktop/tmp/mean.binaryproto"
+    mean_file: "/Users/sakurakouji/Desktop/tmp/mean.binaryproto"
   }
   data_param {
-    source: "/Users/shenxudong/Desktop/tmp/ilsvrc12_train_lmdb"
+    source: "/Users/sakurakouji/Desktop/tmp/ilsvrc12_train_lmdb"
     batch_size: 25
     backend: LMDB
   }
@@ -29,10 +29,10 @@ layer {
   transform_param {
     mirror: false
     crop_size: 227
-    mean_file: "/Users/shenxudong/Desktop/tmp/mean.binaryproto"
+    mean_file: "/Users/sakurakouji/Desktop/tmp/mean.binaryproto"
   }
   data_param {
-    source: "/Users/shenxudong/Desktop/tmp/ilsvrc12_val_lmdb"
+    source: "/Users/sakurakouji/Desktop/tmp/ilsvrc12_val_lmdb"
     batch_size: 5
     backend: LMDB
   }
