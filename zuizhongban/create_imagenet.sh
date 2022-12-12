@@ -3,12 +3,12 @@
 # N.B. set the path to the imagenet train + val data dirs
 set -e
 
-EXAMPLE=/Users/shenxudong/Desktop/tmp
-DATA=/Users/shenxudong/Desktop/tmp
-TOOLS=/Users/shenxudong/Desktop/workspace/caffe/build/tools
+EXAMPLE=/Users/sakurakouji/Desktop/tmp
+DATA=/Users/sakurakouji/Desktop/tmp
+TOOLS=/Users/sakurakouji/Desktop/workspace/caffe/build/tools
 
-TRAIN_DATA_ROOT=/Users/shenxudong/Desktop/tmp/
-VAL_DATA_ROOT=/Users/shenxudong/Desktop/tmp/
+TRAIN_DATA_ROOT=/Users/sakurakouji/Desktop/tmp/
+VAL_DATA_ROOT=/Users/sakurakouji/Desktop/tmp/
 
 # Set RESIZE=true to resize the images to 256x256. Leave as false if images have
 # already been resized using another tool.
